@@ -42,6 +42,5 @@ function pageTransition() {
 
 }
 
-
 pageTransition();
 
