@@ -352,6 +352,9 @@ section {
 .about-stats .progress-bars .progress-bar .progress-container .progress .react {
   width: 60%;
 }
+.about-stats .progress-bars .progress-bar .progress-container .progress .php {
+  width: 50%;
+}
 
 .stat-title {
   text-transform: uppercase;
