@@ -2,7 +2,6 @@ const sections = document.querySelectorAll('.section');
 const sectBtns = document.querySelectorAll('.controls');
 const sectBtn = document.querySelectorAll('.control');
 const allSelections = document.querySelector('.main-content')
-
 function pageTransition() {
     //Button click active class
     for (let i = 0; i < sectBtn.length; i++) {
@@ -41,6 +40,7 @@ function pageTransition() {
     })
 
 }
+
 
 pageTransition();
 
