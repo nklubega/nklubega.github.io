@@ -41,6 +41,28 @@ function pageTransition() {
 
 }
 
+(function() {
+  emailjs.init("AJEdqWZgDx7yh0f0P"); // Replace with your EmailJS User ID
+})();
+
+const contactForm = document.getElementById("contact-form");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    emailjs.sendForm("contact_service", "template_np88wvo", this)
+      .then(function () {
+        alert("Message sent successfully!");
+        contactForm.reset();
+      }, function (error) {
+        alert("Failed to send message. Please try again.");
+        console.error("EmailJS error:", error);
+      });
+  });
+}
+
+
 
 pageTransition();
 
